@@ -17,13 +17,13 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .logo {
   height: 32px;
   width: 232px;
 }
+
 .logo_place_header {
   position: absolute;
   top: 30px;
@@ -37,6 +37,7 @@
   font-weight: 600;
   padding-left: 64px;
   z-index: 2;
+  margin: 0;
 }
 
 .header__subtitle {
@@ -47,6 +48,7 @@
   font-size: 18px;
   line-height: 25px;
   z-index: 2;
+  margin: 0;
 }
 
 .header__link {
@@ -94,6 +96,7 @@
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -148,6 +151,7 @@
 }
 
 .table {
+  margin: 0;
   row-gap: 60px;
   width: 1100px;
   display: flex;
