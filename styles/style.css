@@ -2,6 +2,7 @@
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -460,7 +461,7 @@
 }
 
 .resources__logo {
-  width: 270px; 
+  width: 270px;
   height: 38px;
 }
 
