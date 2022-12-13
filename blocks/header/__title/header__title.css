@@ -1,9 +1,12 @@
 .header__title {
-  width: 730px;
-  font-size: 102px;
-  line-height: 96px;
-  font-weight: 600;
-  padding-left: 64px;
+  box-sizing: border-box;
+  max-width: 730px;
   z-index: 2;
   margin: 0;
+  padding-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
 }
+
+/*убрала margin, использовала для отступа padding */

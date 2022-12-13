@@ -1,0 +1,16 @@
+.kaufman {
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+  z-index: 1;
+  /* убрала фон на нижний слой */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #1f1f1f;
+  background-size: cover;
+  color: #fff;
+}
+/* перенесла стили с kaufman_theme_dark в общие стили*/
