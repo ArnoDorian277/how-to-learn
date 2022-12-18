@@ -12,9 +12,9 @@
 
 >>>>>>> parent of 33685f1 (Растановка файлов по Бэму)
 ======= -->
-  <link rel="stylesheet" href="./vendor/normalize.css"> 
+  <link rel="stylesheet" href="./vendor/normalize.css">  
   <link rel="stylesheet" href="./pages/index.css">
-<!-- >>>>>>> parent of 33685f1 (Растановка файлов по Бэму) -->
+  <!-- !!!файл normalize.css уже подключен через файл index.css , нужно удалить -->
   <title>Научиться учиться</title>
 </head>
 
@@ -31,7 +31,8 @@
         <a href="#" class="header__link">Узнать &#8594;</a>
       </p>
       <img class="header__main-illustration" src="./images/two_again.png" alt="two_again">
-      <div class="header__square-pic rotation_header">
+      <div class="header__square-pic rotation_header"> 
+        <!-- rotation_header можно сделать блоком rotation, тогда при валидации не будет возникать ошибки при проверки по БЭМ( не считается за ошибку, т.к это был мой совет). -->
       </div>
     </header>
     <main class="content">
@@ -61,7 +62,8 @@
         <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
         <ul class="cards">
           <li class="cards__item">
-            <img src="./images/cards-attention.png" alt="one cards" class="cards__image">
+            <img src="./images/cards-attention.png" alt="one cards" class="cards__image"> 
+            <!-- ! атрибут alt рекомендуется писать на языке страницы -->
             <h3 class="cards__title">Два вида внимания</h3>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
               мылшение</p>
@@ -97,6 +99,7 @@
         <h2 class="section-title">Видео на TED</h2>
         <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
         <div class="video__iframes">
+           <!-- в теге iframe нужно удалить ненужные атрибуты , они вызывают ошибки при проверки на валидаторе. прим.  см в общем комментарии. -->
           <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0"
             allowfullscreen class="video__iframe"></iframe>
           <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0"
@@ -238,6 +241,7 @@
           </li>
         </ul>
         <img src="./images/kaufman-triangle.svg" alt="triangle" class="kaufman__triangle rotation_header">
+        <!-- !!! треугольник при анимации заходит за текст, необходимо установить определенный z-index -->
       </section>
     </main>
 
@@ -256,6 +260,10 @@
         <a href="#" class="resources__link"><img src="./images/logo/resources-polka.svg" alt="resources-polka"
             class="resources__logo"></a>
       </div>
+      <!-- всем ссылкам должно быть задано состояние при наведении указателя мыши :hover . в данном случае картинки являются ссылками и нужно реализовать наведение по ним -->
+      <!-- Из брифа : все ссылки на странице при наведении мыши должны плавно становиться немного прозрачными,
+
+подберите opacity и transition на свой вкус -->
     </section>
 
     <!--FOOTER-->
