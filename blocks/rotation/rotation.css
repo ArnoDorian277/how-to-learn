@@ -11,5 +11,3 @@
 .rotation {
   animation: rotation 20s infinite linear;
 }
-
-/* Создаём независимый БЭМ-блок rotation и стилизуем его,используем микс*/

@@ -1,11 +1,10 @@
 .cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0 100px;
-  justify-content: flex-start;
-  max-width: 920px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 100px;
+    margin: 0;
+    padding: 0 0 100px;
+  }
+
+  /* !!! в файловой структуре уже имеется блок  cards. нужно определить какой является верным*/
