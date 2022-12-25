@@ -1,4 +1,5 @@
 .section-subtitle_theme_dark {
     padding-bottom: 80px;
     color: white;
+    z-index: 1;
   }
